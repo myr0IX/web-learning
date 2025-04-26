@@ -1,8 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { useState } from "react";
 
-import styles from "./Main.module.css";
-console.log(styles);
 
 // Get the root element from the DOM
 const container = document.getElementById("root");
@@ -22,8 +20,8 @@ if (container) {
 
 export function Header() {
   return (
-    <header className={styles.flex}>
-      <div className={styles["flex-col"]}>
+    <header className="cards flex space-btw" >
+      <div className="flex-col">
         <h1>Fullstack Developer</h1>
         <h2>CASSAGNE Mathys</h2>
       </div>
@@ -38,17 +36,17 @@ function Nav() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div>
       <button onClick={toggleMenu}>Menu</button>
       {isOpen && (
-        <ol>
-          <ul>Profile</ul>
-          <ul>Skills</ul>
-          <ul>Projects</ul>
-          <ul>School</ul>
-          <ul>Personal interests</ul>
-        </ol>
+        <nav className="nav">
+          <ul><a href="# "></a>Profile</ul>
+          <ul><a href="# "></a>Skills</ul>
+          <ul><a href="# "></a>Projects</ul>
+          <ul><a href="# "></a>School</ul>
+          <ul><a href="# "></a>Personal interests</ul>
+        </nav>
       )}
-    </>
+    </div>
   );
 }

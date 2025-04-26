@@ -1,7 +1,21 @@
-.flex {
-	display: flex;
+.nav {
+	border: 2px;
+	justify-content: start;
+	flex-flow: column wrap;
+	margin: 0;
+	padding: 0;
 }
 
-.flex-col {
-	flex-direction: column;
+.nav ul {
+	box-shadow: 1px 1px 2px;
+
+}
+
+.nav button {
+	position: fixed;
+	background-color: aqua;
+}
+
+.absolute {
+	/* position: absolute; */
 }
